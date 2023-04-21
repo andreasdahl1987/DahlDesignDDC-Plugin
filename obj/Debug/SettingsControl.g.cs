@@ -62,7 +62,7 @@ namespace DahlDesign.Plugin {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DahlDesign.Plugin;component/settingscontrol.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DDC;component/settingscontrol.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\SettingsControl.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
