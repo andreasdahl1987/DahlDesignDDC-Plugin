@@ -24,6 +24,7 @@ namespace DahlDesign.Plugin
         private void MyComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Plugin.selectedItem = myComboBox.SelectedIndex;
+            Plugin.Settings.DDCselector = myComboBox.SelectedIndex;
         }       
     }
 }

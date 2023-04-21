@@ -26,6 +26,7 @@ namespace DahlDesign.Plugin
         //Public globals
         public ObservableCollection<string> controllerNames { get; set; } = new ObservableCollection<string> { "dummy"};
         public int selectedItem { get; set; } = -1;
+        public bool selectInit { get; set; } = false;
 
         //Private globals
         double clutchValue = 0;
@@ -37,6 +38,7 @@ namespace DahlDesign.Plugin
 
         int controllerCount = 0;
         bool countUpdate = false;
+        bool firstInit = true;
 
         public void DataUpdate(PluginManager pluginManager, ref GameData data)
         {
@@ -60,6 +62,12 @@ namespace DahlDesign.Plugin
                     }
                     countUpdate = false;
                 });
+            }
+
+            if (controllerCount >= Settings.DDCselector && firstInit)
+            {
+                firstInit = false;
+                selectInit = true;
             }
 
 
