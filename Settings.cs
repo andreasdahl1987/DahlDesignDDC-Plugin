@@ -5,6 +5,6 @@
     /// </summary>
     public class DataSettings
     {
-        public int DDCselector { get; set; } = -1;
-    }
+        public string DDCselector { get; set; } = "";
+    }s
 }

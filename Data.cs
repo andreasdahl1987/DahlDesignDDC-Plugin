@@ -64,10 +64,10 @@ namespace DahlDesign.Plugin
                 });
             }
 
-            if (controllerCount >= Settings.DDCselector && firstInit)
+            if (firstInit && controllerNames.Contains(Settings.DDCselector))
             {
                 firstInit = false;
-                selectInit = true;
+                
             }
 
 
