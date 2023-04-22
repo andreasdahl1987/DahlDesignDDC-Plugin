@@ -6,5 +6,5 @@
     public class DataSettings
     {
         public string DDCselector { get; set; } = "";
-    }s
+    }
 }

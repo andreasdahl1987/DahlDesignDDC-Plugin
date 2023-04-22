@@ -27,6 +27,7 @@ namespace DahlDesign.Plugin
         public ObservableCollection<string> controllerNames { get; set; } = new ObservableCollection<string> { "dummy"};
         public int selectedItem { get; set; } = -1;
         public bool selectInit { get; set; } = false;
+        public bool firstSelect { get; set; } = false;
 
         //Private globals
         double clutchValue = 0;
@@ -67,6 +68,7 @@ namespace DahlDesign.Plugin
             if (firstInit && controllerNames.Contains(Settings.DDCselector))
             {
                 firstInit = false;
+                firstSelect = true;
                 
             }
 
